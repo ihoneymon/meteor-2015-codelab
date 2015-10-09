@@ -343,4 +343,23 @@ Template.main.helpers({
 <h2>{{page}}'s Page</h2>
 ```
 
+> * Reactive Programming
+  - Reactivity
+  
+***
+# 14. Publish/Subscribe
+* 보고 싶은 것만 보고 싶다.
+* meteor remove autopublish
+
+## 14.1. autopublish 제거
+* 서버의 자동배포를 껐음
+```
+honeymon@meteor-2015-codelab (master)$ meteor remove autopublish
+                                              
+Changes to your project's package version selections:
+                                              
+autopublish  removed from your project
+
+autopublish: removed dependency 
+```
 
