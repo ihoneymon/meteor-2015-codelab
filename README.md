@@ -150,4 +150,33 @@ first projects on the web.
 ***
 
 # 8. 이사
+## 8.1. `client` 폴더 생성후 html 파일 이동
 
+## 8.2. Connect DB
+### 8.2.1. posts.js 파일을 만들어서 
+```
+Template.posts.helpers({
+  "posts": function() {
+    return Posts.find();
+  }
+});
+```
+
+### 8.2.2. Collection을 추가하고
+`/lib/collections.js` 생성
+```
+Posts = new Mongo.Collection('posts');
+```
+
+### 8.2.3. Collection에 데이터를 넣어자.
+```
+Posts.insert({"author": {"name": "주인님", "profile_image": "http://lorempixel.com/64/64/cats/"}, message: "뭐하냥?"});
+```
+
+### 8.2.4. find를 이용해서 찾아보자.
+```
+Posts.find().fetch();
+```
+
+***
+# 9. Server Method: 보안이 필요한 시기

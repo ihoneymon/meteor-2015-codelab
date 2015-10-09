@@ -1,24 +1,15 @@
 <template name="posts">
+  {{#each posts}}
   <div class="media">
     <div class="media-left">
       <a href="#">
-        <img class="media-object" src="http://lorempixel.com/64/64/cats/" alt="cat">
+        <img class="media-object" src="{{author.profile_image}}" alt="{{author.name}}"/>
       </a>
     </div>
     <div class="media-body">
-      <h4 class="media-heading">Master</h4>
-      집사야 내 밥은 어디있냐?
+      <h4 class="media-heading">{{author.name}}</h4>
+      {{message}}
     </div>
   </div>
-  <div class="media">
-    <div class="media-left">
-      <a href="#">
-        <img class="media-object" src="http://lorempixel.com/64/64/people/" alt="people">
-      </a>
-    </div>
-    <div class="media-body">
-      <h4 class="media-heading">Slave4U</h4>
-      패고파서 내가 먹었어.
-    </div>
-  </div>
+  {{/each}}
 </template>
