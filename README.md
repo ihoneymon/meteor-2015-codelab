@@ -180,3 +180,22 @@ Posts.find().fetch();
 
 ***
 # 9. Server Method: 보안이 필요한 시기
+## 9.1. Remove insecure
+* meteor remove insecure
+```
+honeymon@meteor-2015-codelab (master)$ meteor remove insecure
+                                              
+Changes to your project's package version selections:
+                                              
+insecure  removed from your project           
+
+insecure: removed dependency
+```
+* insert failed: Access denied
+* 사용자가 임의로 데이터 조작을 할 수 없음
+
+## 9.2.  Methods
+* `server/method.js` - 서버에서만 insert
+> 서버 프로그래밍으로 돌입
+
+
