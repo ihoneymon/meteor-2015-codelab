@@ -126,4 +126,16 @@ first projects on the web.
 > 로컬 레퍼지토리는 `~/.meteor` 디렉토리에 생성함
 ***
 
-# 6. HEAD - Bootstrap: navbar
+# 6. POST Template
+* <https://github.com/MeteorKorea/meteor2015codelab/tree/02main>
+# 6.1. HEAD - Bootstrap: navbar
+* Bootstap:navbar <http://bootstrapk.com/components/#navbar>
+* Bootstap:container
+
+## 6.2. MAIN - Button addon
+* bootstrap:inputgroup <http://bootstrapk.com/components/#input-groups-buttons>
+* bootstrap:button-option <http://bootstrapk.com/css/#buttons-options>
+* bootstrap:glyphicon <http://bootstrapk.com/components/#glyphicons>
+
+## 6.3. Media 컴포넌트 사용
+***
