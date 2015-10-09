@@ -293,6 +293,54 @@ Project reset.
 
 > 오오... +_+) console.table()
 ```
-console.table(Posts.find().fetch())
+console.table(Posts.find({}, {sort: {"createdDate": -1}}).fetch())
 ```
-  
+
+## 12.2. 데이터를 거꾸로 정렬되도록 정의
+```
+Template.posts.helpers({
+  "posts": function() {
+    return Posts.find({}, {
+      "sort": {
+        "createdDate": -1
+      }
+    });
+  }
+});
+```
+
+***
+# 13. Session을 분리
+> 주제별로 대화를 나눌 수 있도록 방을 분리
+
+## 13.1. Session
+### 13.1.1. 장점
+### 13.1.2. 단점
+
+## 13.2. Session 사용법
+* 세션 읽기
+```
+Session.get('pageId');
+```
+
+* 세션 쓰기
+```
+Session.set('pageId', 'catLover');
+```
+
+## 13.3. Session 을 템플릿에 추가하도록 수정
+* main.js
+```
+Template.main.helpers({
+  'page': function() {
+    return Session.get('pageId');
+  }
+});
+```
+
+* main.html
+```
+<h2>{{page}}'s Page</h2>
+```
+
+

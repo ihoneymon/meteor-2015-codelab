@@ -1,3 +1,9 @@
+Template.main.helpers({
+  'page': function() {
+    return Session.get('pageId');
+  }
+});
+
 Template.main.events({
   //버튼을 눌러 submit이 발생한 것을 확인하여 서버에 처리
   "submit": function(event, template) {
@@ -6,8 +12,8 @@ Template.main.events({
       "profile_image": "http://lorempixel.com/64/64/cats",
       message: template.find("#post").value //이벤트가 발생한 템플릿에서! #post 를 찾아서!
     }, function(error) {
-      if(error) {
-        throw(error);
+      if (error) {
+        throw (error);
       } else {
         template.find("#post").value = "";
       }
