@@ -269,3 +269,15 @@ Template.main.events({
   }
 });
 ```
+
+***
+# 11. 서버 초기화
+## 11.1. 서버초기화
+* `meteor reset`
+```
+honeymon@meteor-2015-codelab (master)$ meteor reset
+Project reset.
+```
+
+## 11.2. 재기동
+* `meteor reset`
