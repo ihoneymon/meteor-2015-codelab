@@ -5,7 +5,7 @@ Meteor.methods({
     Posts.insert({
       author: {
         name: Meteor.user().username,
-        profile_image: post.profile_image
+        profile_image: Gravatar.imageUrl(Meteor.user().emails[0].address, {d: 'retro'})
       },
       pageId: post.pageId,
       message: post.message,
