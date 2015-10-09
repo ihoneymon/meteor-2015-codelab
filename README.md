@@ -198,4 +198,18 @@ insecure: removed dependency
 * `server/method.js` - 서버에서만 insert
 > 서버 프로그래밍으로 돌입
 
+```
+Meteor.methods({
+  "addPost": function(post) {
+    Posts.insert({
+      author: {
+        name: post.name,
+        profile_image: post.profile_image
+      },
+      message: post.message
+    })
+  }
+});
+```
+
 
