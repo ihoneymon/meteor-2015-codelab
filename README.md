@@ -121,8 +121,9 @@ first projects on the web.
 ```
 
 ***
-# 6. emmet
-```
-meta:vp [tab]!!
-```
+> 한글계정을 사용할 경우에는 문제가 생길 수 있으니 영어로...
 
+> 로컬 레퍼지토리는 `~/.meteor` 디렉토리에 생성함
+***
+
+# 6. HEAD - Bootstrap: navbar
