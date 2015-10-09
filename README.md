@@ -448,3 +448,7 @@ ian:accounts-ui-bootstrap-3: Bootstrap-styled accounts-ui with multi-language su
   {{> loginButtons}}
 </template>
 ```
+
+***
+# 17. User in method
+* 사용자 이름을 넣기

@@ -10,7 +10,7 @@ Template.posts.helpers({
    "posts": function() {
        return Posts.find({}, {
            sort: {
-               createdAt: -1
+               createdDate: -1
            }
        });
    }
