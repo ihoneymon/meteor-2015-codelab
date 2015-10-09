@@ -281,3 +281,18 @@ Project reset.
 
 ## 11.2. 재기동
 * `meteor reset`
+
+***
+# 12. `addPost` 수정
+글이 밑에 붙으면서 불편함!!
+* 메서드가 서버안에 있어야 하는 이유?
+  - 클라이언트의 시간은 신뢰할 수 없다.
+  
+## 12.1. 순서를 결정하기 위한 구분자로 `createdDate` 필드 추가
+* 메테오 초기화
+
+> 오오... +_+) console.table()
+```
+console.table(Posts.find().fetch())
+```
+  
