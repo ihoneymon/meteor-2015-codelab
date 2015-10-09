@@ -9,6 +9,7 @@
 * [Meteor KOREA](http://www.meteorjs.kr/)
 * [Meteor 2015 codelab](https://github.com/MeteorKorea/meteor2015codelab)
 * 실습반영 [Github repository](https://github.com/ihoneymon/meteor-2015-codelab)
+* [meteor reference document](http://docs.meteor.com/#/basic/)
 
 * 미티오 코드랩 1, 2회 추가진행될 예정
 
@@ -126,7 +127,7 @@ first projects on the web.
 > 로컬 레퍼지토리는 `~/.meteor` 디렉토리에 생성함
 ***
 
-# 6. POST Template
+# 6. HEAD & MAIN
 * <https://github.com/MeteorKorea/meteor2015codelab/tree/02main>
 # 6.1. HEAD - Bootstrap: navbar
 * Bootstap:navbar <http://bootstrapk.com/components/#navbar>
@@ -137,5 +138,13 @@ first projects on the web.
 * bootstrap:button-option <http://bootstrapk.com/css/#buttons-options>
 * bootstrap:glyphicon <http://bootstrapk.com/components/#glyphicons>
 
-## 6.3. Media 컴포넌트 사용
+# 7. POST Template
+## 7.1. Media 컴포넌트 사용
+* bootstrap:media <http://bootstrapk.com/components/#media-default>
+
+> 프로그램을 만드는 이유:
+> > 반복적으로 하는 일이 귀찮아서.
+
+## 7.2. 반복구간 제거하기
+
 ***
