@@ -363,3 +363,7 @@ autopublish  removed from your project
 autopublish: removed dependency 
 ```
 
+## 14.2. subscribe
+```
+Meteor.subscribe('getPage');
+```

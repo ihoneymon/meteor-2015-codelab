@@ -1,8 +1,14 @@
+Template.main.onCreated(function() {
+  //on으로 시작하는 것은 자기자신에서 불러온다.
+  this.subscribe('getPage');
+});
+
 Template.main.helpers({
   'page': function() {
     return Session.get('pageId');
   }
 });
+
 
 Template.main.events({
   //버튼을 눌러 submit이 발생한 것을 확인하여 서버에 처리
