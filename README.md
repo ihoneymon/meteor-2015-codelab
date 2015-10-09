@@ -378,9 +378,73 @@ Meteor.subscribe('getPage');
 meteor add kadira:flow-router
 ```
 
+```
+honeymon@meteor-2015-codelab (master)$ meteor add kadira:flow-router
+                                                  
+Changes to your project's package version selections:
+                                              
+coffeescript        added, version 1.0.10     
+cosmos:browserify   added, version 0.5.1
+kadira:flow-router  added, version 2.7.0
+
+                                              
+kadira:flow-router: Carefully Designed Client Side Router for Meteor
+```
+
 ***
 # 16. 로그인 - Accounts
 * <https://www.meteor.com/accounts>
 ```
 meteor add accounts-password
+```
+
+```
+honeymon@meteor-2015-codelab (master)*$ meteor add accounts-password
+                                                                                   
+Changes to your project's package version selections:
+                                              
+accounts-base          added, version 1.2.1   
+accounts-password      added, version 1.1.3
+ddp-rate-limiter       added, version 1.0.0
+email                  added, version 1.0.7
+localstorage           added, version 1.0.5
+npm-bcrypt             added, version 0.7.8_2
+rate-limit             added, version 1.0.0
+service-configuration  added, version 1.0.5
+sha                    added, version 1.0.4
+srp                    added, version 1.0.4
+
+                                              
+accounts-password: Password support for accounts
+```
+
+* 로그인을 위한 UI 추가
+
+```
+honeymon@meteor-2015-codelab (master)$ meteor add ian:accounts-ui-bootstrap-3
+                                              
+Changes to your project's package version selections:
+                                              
+anti:i18n                    added, version 0.4.3
+ian:accounts-ui-bootstrap-3  added, version 1.2.81
+stylus                       added, version 2.511.0_2
+
+                                              
+ian:accounts-ui-bootstrap-3: Bootstrap-styled accounts-ui with multi-language support.
+```
+
+* head.html에 추가?
+```
+<template name="head">
+  <nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          honeymon.io
+        </a>
+      </div>
+    </div>
+  </nav>
+  {{> loginButtons}}
+</template>
 ```
