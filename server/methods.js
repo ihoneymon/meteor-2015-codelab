@@ -5,6 +5,7 @@ Meteor.methods({
         name: post.name,
         profile_image: post.profile_image
       },
+      pageId: post.pageId,
       message: post.message,
       createdDate: new Date()
     })

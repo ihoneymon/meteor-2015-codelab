@@ -367,3 +367,20 @@ autopublish: removed dependency
 ```
 Meteor.subscribe('getPage');
 ```
+
+***
+# 15. Router
+* 키워드별 POSTS
+
+## 15.1. Router 추가
+* <https://kadira.io/academy/meteor-routing-guide/content/introduction-to-flow-router>
+```
+meteor add kadira:flow-router
+```
+
+***
+# 16. 로그인 - Accounts
+* <https://www.meteor.com/accounts>
+```
+meteor add accounts-password
+```
